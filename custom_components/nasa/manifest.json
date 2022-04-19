@@ -1,0 +1,14 @@
+{
+  "domain": "nasa",
+  "name": "Nasa",
+  "config_flow": true,
+  "documentation": "https://github.com/caiosweet/Home-Assistant-custom-components-NASA",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/caiosweet/Home-Assistant-custom-components-NASA/issues",
+  "requirements": [
+    "aionasa @ git+https://github.com/caiosweet/aionasa.git@master"
+  ],
+  "codeowners": ["@caiosweet"],
+  "version": "0.0.1",
+  "loggers": ["aionasa"]
+}

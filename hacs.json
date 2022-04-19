@@ -1,0 +1,8 @@
+{
+  "name": "Nasa APIs",
+  "domains": ["sensor"],
+  "zip_release": false,
+  "render_readme": false,
+  "iot_class": ["Cloud Polling"],
+  "homeassistant": "2022.4.0"
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Nasa",
+  "config": {
+    "step": {
+      "user": {
+        "data": {
+          "api_key": "API Key"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_api_key": "Invalid API key",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "single_instance_allowed": "Already configured. Only a single configuration possible."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "scan_interval": "Update interval (minutes, default 120)"
+        }
+      }
+    }
+  }
+}

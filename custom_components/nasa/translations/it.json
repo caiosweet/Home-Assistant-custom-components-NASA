@@ -1,0 +1,29 @@
+{
+  "title": "Nasa",
+  "config": {
+    "step": {
+      "user": {
+        "data": {
+          "api_key": "Chiave API"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossibile connettersi",
+      "invalid_api_key": "Chiave API errata",
+      "unknown": "Errore imprevisto"
+    },
+    "abort": {
+      "single_instance_allowed": "Gi\u00e0 configurato. \u00c8 possibile una sola configurazione."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "scan_interval": "Intervallo di aggiornamento (minuti, default 120)"
+        }
+      }
+    }
+  }
+}
