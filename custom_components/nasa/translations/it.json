@@ -2,6 +2,7 @@
   "config": {
     "step": {
       "user": {
+        "title": "Nasa",
         "data": {
           "api_key": "Chiave API"
         }
@@ -19,6 +20,7 @@
   "options": {
     "step": {
       "init": {
+        "title": "Opzioni API NASA",
         "data": {
           "scan_interval": "Intervallo di aggiornamento (minuti, default 120)"
         }

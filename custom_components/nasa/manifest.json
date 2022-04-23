@@ -6,9 +6,9 @@
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/caiosweet/Home-Assistant-custom-components-NASA/issues",
   "requirements": [
-    "git+https://github.com/caiosweet/aionasa.git@dev#devp==v0.2.2"
+    "git+https://github.com/caiosweet/aionasa.git@dev#dev==v0.2.2"
   ],
   "codeowners": ["@caiosweet"],
-  "version": "0.0.1",
+  "version": "0.0.0",
   "loggers": ["aionasa"]
 }

@@ -60,14 +60,14 @@ Now the integration is added to HACS and available in the normal HA integration 
 3. Click `ADD INTEGRATION`
 4. Type `Nasa` and select it
 5. Enter the data:
-   1. **Apy Key**: default DEMO KEY
-6. Configure the Optional:
-   1. [APOD] - Astronomy Picture of the Day
-   2. [InSight] - Mars Weather Service API
-   3. [EPIC] - Earth Polychromatic Imaging Camera
-   4. [NeoWs] - Asteroids Near Earth Object Web Service
-   5. [Exoplanet] - Exoplanet Archive
-   6. Update interval (minutes, default 120)
+   - **Apy Key**: default DEMO KEY
+6. Configure the Options:
+   - [APOD] - Astronomy Picture of the Day
+   - [InSight] - Mars Weather Service API
+   - [EPIC] - Earth Polychromatic Imaging Camera
+   - [NeoWs] - Asteroids Near Earth Object Web Service
+   - [Exoplanet] - Exoplanet Archive
+   - Update interval (minutes, default 120)
 
 Once you done that, you’re ready to start.
 

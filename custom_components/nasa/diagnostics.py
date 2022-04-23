@@ -6,7 +6,6 @@ from typing import Any
 from aionasa import APOD
 from aionasa.errors import APIException
 from attr import asdict
-import requests
 
 from homeassistant.components.diagnostics import async_redact_data
 from homeassistant.config_entries import ConfigEntry
@@ -27,10 +26,6 @@ async def async_get_config_entry_diagnostics(
 ) -> dict[str, Any]:
     """Return diagnostics for a config entry."""
 
-    def _rate_limit(api_key):
-        headers = requests.get(f"https://api.nasa.gov/planetary/apod?api_key={api_key}").headers
-        return int(headers["X-RateLimit-Remaining"])
-
     data = {"options": {**config_entry.options}}
     api_key = config_entry.data.get(CONF_API_KEY, "DEMO_KEY")
     client = APOD(
@@ -38,12 +33,13 @@ async def async_get_config_entry_diagnostics(
         api_key=api_key,
     )
     try:
-        response = await client.get()
+        # response = await client.get(as_json=True)
+        rate_limiter_remaining = client.rate_limiter.remaining
     except APIException as err:
         data["rate_limit"] = {"error": str(err)}
     else:
-        data["read_chunk"] = await response.read_chunk(1000000)
-        data["rate_limit"] = await hass.async_add_executor_job(_rate_limit, api_key)
+        # data["read_chunk"] = await response.read_chunk(1000000)
+        data["rate_limit"] = rate_limiter_remaining
 
     sourceapis: dict[str, NasaDataUpdateCoordinator] = hass.data[DOMAIN]
     data[CONF_API_CATEGORY] = {}

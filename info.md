@@ -6,7 +6,7 @@
 
 # Home Assistant - Custom Components Nasa APIs
 
-<img src="https://github.com/caiosweet/Home-Assistant-custom-components-NASA/blob/main/assets/brand/icon.png" width="150px">
+![Nasa](assets/brand/logo.png)
 
 Welcome to my repository Home Assistant - Custom Component NASA for the [nasa.gov][nasa] API.
 
@@ -22,7 +22,7 @@ Please remove the old installation and reinstall the new one. Otherwise, orphan 
 
 {% endif %}
 
-{% if version_installed.replace("v", "").replace(".","") | int < 202170  %}
+{% if version_installed.replace("v", "").replace(".","") | int < 001 %}
 
 ### Breaking Changes
 
@@ -47,7 +47,6 @@ Please remove the old installation and reinstall the new one. Otherwise, orphan 
 6. Restart Home Assistant
 
 {% endif %}
-
 
 <!--- Badge -->
 

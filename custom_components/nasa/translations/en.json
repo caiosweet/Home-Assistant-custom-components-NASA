@@ -2,6 +2,7 @@
   "config": {
     "step": {
       "user": {
+        "title": "Nasa",
         "data": {
           "api_key": "API Key"
         }
@@ -19,6 +20,7 @@
   "options": {
     "step": {
       "init": {
+        "title": "Nasa APIs Options",
         "data": {
           "scan_interval": "Update interval (minutes, default 120)"
         }

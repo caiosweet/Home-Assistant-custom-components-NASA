@@ -66,7 +66,7 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                 LOGGER.exception("Unexpected exception")
                 errors["base"] = "unknown"
             if not errors:
-                return self.async_create_entry(title="Nasa", data=user_input)
+                return self.async_create_entry(title=DOMAIN.title(), data=user_input)
 
         return self.async_show_form(
             step_id="user", data_schema=STEP_USER_DATA_SCHEMA, errors=errors

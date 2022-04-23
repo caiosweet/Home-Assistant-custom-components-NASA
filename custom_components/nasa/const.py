@@ -6,13 +6,15 @@ from typing import Final
 
 from homeassistant.const import Platform
 
+from .version import __version__
+
 DOMAIN: Final = "nasa"
 LOGGER: Final[Logger] = getLogger(__package__)
 PLATFORMS: Final[list[Platform]] = [Platform.SENSOR]
 
 NAME: Final = "NASA APIs"
-VERSION: Final = "0.0.1"
-ISSUE_URL: Final = "https://github.com/caiosweet/Home-Assistant-custom-components-DPC-Alert/issues"
+VERSION: Final = __version__
+ISSUE_URL: Final = "https://github.com/caiosweet/Home-Assistant-custom-components-NASA/issues"
 
 API_CATEGORY: Final[list] = ["APOD", "InSight", "EPIC", "NeoWs", "Exoplanet"]
 CONF_API_CATEGORY: Final = "api_category"
