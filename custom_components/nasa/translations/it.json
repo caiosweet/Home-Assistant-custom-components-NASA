@@ -2,7 +2,6 @@
   "config": {
     "step": {
       "user": {
-        "title": "Nasa",
         "data": {
           "api_key": "Chiave API"
         }
