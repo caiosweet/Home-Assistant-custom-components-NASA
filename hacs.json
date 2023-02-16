@@ -2,8 +2,6 @@
   "name": "Nasa APIs",
   "zip_release": true,
   "filename": "nasa.zip",
-  "domains": ["sensor"],
   "render_readme": false,
-  "iot_class": ["Cloud Polling"],
-  "homeassistant": "2022.4.0"
+  "homeassistant": "2023.02.0"
 }
