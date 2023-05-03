@@ -8,7 +8,7 @@ from typing import Any
 from homeassistant.components.sensor import (
     SensorEntity,
     SensorEntityDescription,
-    SensorStateClass,
+    # SensorStateClass,
 )
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
@@ -47,9 +47,9 @@ SENSOR_DESCRIPTIONS: tuple[NasaSensorEntityDescription, ...] = (
         key="apod",
         name="APOD",
         icon="mdi:image",
-        native_unit_of_measurement="Apod",
+        # native_unit_of_measurement="Apod",
         entity_category=EntityCategory.DIAGNOSTIC,
-        state_class=SensorStateClass.MEASUREMENT,
+        # state_class=SensorStateClass.MEASUREMENT,
         value_fn=lambda data: data["title"],
         attr_fn=lambda data: data,
     ),
@@ -57,7 +57,7 @@ SENSOR_DESCRIPTIONS: tuple[NasaSensorEntityDescription, ...] = (
         key="epic",
         name="EPIC",
         icon="mdi:earth",
-        state_class=SensorStateClass.MEASUREMENT,
+        # state_class=SensorStateClass.MEASUREMENT,
         # avabl_fn=lambda data: data["date"],
         value_fn=lambda data: data["last_date"],
         attr_fn=lambda data: data,
@@ -67,7 +67,7 @@ SENSOR_DESCRIPTIONS: tuple[NasaSensorEntityDescription, ...] = (
         key="insight",
         name="InSight",
         icon="mdi:sun-compass",
-        state_class=SensorStateClass.MEASUREMENT,
+        # state_class=SensorStateClass.MEASUREMENT,
         avabl_fn=lambda data: data["sol_keys"],
         value_fn=lambda data: data["sol_keys"][-1],
         attr_fn=lambda data: data[data["sol_keys"][-1]],
