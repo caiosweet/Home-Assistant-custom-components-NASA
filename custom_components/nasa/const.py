@@ -10,7 +10,7 @@ from .version import __version__
 
 DOMAIN: Final = "nasa"
 LOGGER: Final[Logger] = getLogger(__package__)
-PLATFORMS: Final[list[Platform]] = [Platform.SENSOR]
+PLATFORMS: Final[list[Platform]] = [Platform.SENSOR, Platform.IMAGE]
 
 NAME: Final = "NASA APIs"
 VERSION: Final = __version__
